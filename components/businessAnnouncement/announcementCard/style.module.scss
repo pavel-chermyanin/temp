@@ -1,0 +1,139 @@
+@import '@/styles/mixins';
+
+
+.card_wrapper {
+  display: flex;
+  gap: 30px;
+
+  .card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    flex-grow: 1;
+    cursor: pointer;
+
+    p {
+      margin: 0;
+    }
+
+    .info {
+      font-weight: 500;
+
+      .title_group {
+        font-size: 20px;
+        font-weight: 600;
+        color: $gray-900;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+      }
+
+      .price {
+        font-size: 18px;
+        font-weight: 500;
+        color: $gray-900;
+        white-space: nowrap;
+      }
+
+      .info_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-left: 0;
+        margin: 0;
+
+        .address {
+          .value {
+            position: relative;
+            padding-left: 14px;
+
+            &:after {
+              position: absolute;
+              content: '';
+              height: 6px;
+              width: 6px;
+              border-radius: 50%;
+              background-color: red;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+            }
+          }
+        }
+
+
+
+        .info_item {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          .creation_date {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            .time {
+              color: $gray-600;
+            }
+
+            .author {
+              color: $gray-800;
+              padding-left: 12px;
+              position: relative;
+
+              &:after {
+                position: absolute;
+                content: '';
+                height: 4px;
+                width: 4px;
+                border-radius: 50%;
+                background-color: $gray-600;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+              }
+            }
+          }
+
+          .name {
+            color: $gray-600;
+          }
+
+          .value {
+            color: $gray-800;
+          }
+        }
+
+        .date_group {
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          &.grid {
+            flex-direction: column;
+          }
+
+          .date_line {
+            display: flex;
+            gap: 8px;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .statusApproved {
+    color: #55CD42;
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
+  .statusReject {
+    color: red;
+    font-size: 14px;
+    margin-top: 16px;
+  }
+}

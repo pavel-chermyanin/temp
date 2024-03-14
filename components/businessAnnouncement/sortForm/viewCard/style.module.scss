@@ -1,0 +1,38 @@
+@import '@/styles/mixins';
+
+
+.container {
+  background-color: $gray-200;
+  padding: 2px;
+  border-radius: 12px;
+  width: 200px;
+
+  >div {
+    width: 100%;
+  }
+}
+
+.toggleButton {
+  box-shadow: none;
+  background: $gray-200 !important;
+  color: $gray-600 !important;
+  border: none;
+  flex: 1;
+
+
+
+  i {
+    position: relative;
+    top: 1px;
+  }
+
+
+  &:hover {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
+  }
+}
+
+.toggleButton.active {
+  background: #fff !important;
+  color: $primary !important;
+}

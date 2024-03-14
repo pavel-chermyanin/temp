@@ -1,0 +1,75 @@
+@import '@/styles/mixins';
+
+.contractorCard {
+    border-radius: 12px;
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: 1300px) {
+        flex-direction: column;
+    }
+}
+
+.tabsBlock {
+    padding: 30px;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 12px;
+
+    .header {
+        gap: 12px;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+
+        .avatar {
+            background-color: $gray-600;
+            border-radius: 50%;
+        }
+
+        .ava_default {
+            width: 64px;
+            height: 64px;
+            font-size: xx-large;
+            background-color: $gray-300;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+                margin: 0;
+                font-size: 20px;
+                font-weight: 600;
+                color: $gray-900;
+            }
+
+            .status {
+                font-size: 14px;
+                color: $gray-600;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .tabs {}
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 337px;
+
+    button {
+        padding: 20px 0;
+        font-weight: 600;
+        line-height: 16px;
+        border-radius: 6px;
+    }
+}

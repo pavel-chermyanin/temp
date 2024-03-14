@@ -1,0 +1,9 @@
+@import '@/styles/mixins';
+
+
+.price {
+  font-size: 18px;
+  font-weight: 500;
+  color: $gray-900;
+  white-space: nowrap;
+}

@@ -1,0 +1,18 @@
+@import '@/styles/mixins';
+
+.blockHelp {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.blockHelp_title{
+    font-size: 20px;
+    font-weight: 600;
+    color: $gray-900;
+    margin-bottom: 24px;
+}
+
+.button {
+
+}

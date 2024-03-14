@@ -1,0 +1,18 @@
+@import '@/styles/mixins';
+
+.header{
+    border-bottom: none;
+
+    .title{
+        font-size: 20px;
+        font-weight: 600;   
+    }
+}
+
+.text{
+    
+}
+
+.footer{
+    border-top: none;
+}

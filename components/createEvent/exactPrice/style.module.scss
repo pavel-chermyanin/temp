@@ -1,0 +1,66 @@
+@import '@/styles/mixins';
+
+.price_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+
+    input{
+        width: 100%;
+        height: auto;
+        border: 1px solid $gray-300;
+        background: none;
+
+    }
+
+    .form_group{
+
+        input{
+            width: 100%;
+        }
+    }
+
+    label{
+        margin-bottom: 12px;
+        font-weight: 600;
+        color: $gray-900;
+    }
+}
+
+.btn_toggle {
+    color: $primary;
+    font-size: 14px;
+    display: flex;
+    align-items: baseline;
+    align-self: start;
+    gap: 8px;
+    padding: 0;
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+            color: $primary;
+            font-size: 16px;
+            vertical-align: middle;
+
+            &.selected{
+                position: relative;
+                top: -1px;
+            }
+            i{
+                font-weight: 600;
+
+            }
+            // font-weight: 900;
+        }
+    }
+
+}

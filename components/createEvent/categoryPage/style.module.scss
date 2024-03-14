@@ -1,0 +1,43 @@
+@import '@/styles/mixins';
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    background-color: #fff;
+    grid-row-gap: 16px;
+    padding: 48px;
+    border-radius: 12px;
+
+    li{
+        list-style: none;
+    }
+
+    @media( max-width: 500px) {
+        padding: 48px 15px;
+    }
+
+    .item_wrapper{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        label {
+            white-space: nowrap;
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    input {
+        width: 30px;
+        height: 30px;
+        background: $gray-200;
+        border: none;
+
+        &:checked{
+            border: 8px solid $primary;
+            background-image: none !important;
+        }
+    }
+}
+

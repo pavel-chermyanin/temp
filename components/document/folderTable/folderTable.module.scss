@@ -1,0 +1,43 @@
+@import '@/styles/mixins';
+
+.table {
+  input[type='checkbox'] {
+    border: none;
+    background: $gray-300;
+    width: 30px;
+    height: 30px;
+  }
+  th,
+  td {
+    vertical-align: middle;
+  }
+  th {
+    color: #a1a5b7;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  td {
+    font-weight: 500;
+    color: $gray-600;
+  }
+  th:first-child {
+    padding-left: 0;
+  }
+  th:last-child {
+    padding-right: 0;
+  }
+  td:first-child {
+    padding-left: 0;
+  }
+  td:nth-child(2) {
+    color: $gray-800;
+  }
+  td:last-child {
+    // color: $gray-800;
+    padding-right: 0;
+  }
+  th:not(:nth-child(-n + 2)),
+  td:not(:nth-child(-n + 2)) {
+    text-align: end;
+  }
+}

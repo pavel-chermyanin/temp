@@ -1,0 +1,32 @@
+@import '@/styles/mixins';
+
+.grid {
+    display: grid;
+    background-color: #fff;
+    grid-row-gap: 16px; 
+    padding: 48px;
+    border-radius: 12px;
+    
+    @media( max-width: 500px) {
+        padding: 48px 15px;
+    }
+
+    .item_wrapper{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    input {
+        width: 30px;
+        height: 30px;
+        background: $gray-200;
+        border: none;
+
+        &:checked{
+            border: 8px solid $primary;
+            background-image: none !important;
+        }
+    }
+}
+

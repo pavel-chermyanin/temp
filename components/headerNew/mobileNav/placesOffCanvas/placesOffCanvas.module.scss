@@ -1,0 +1,23 @@
+@import '@/styles/mixins';
+
+.header {
+    padding: 16px !important;
+    border-bottom: 1px solid $gray-300;
+
+    .title {
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+.link_all,
+.link {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 16px;
+    border-bottom: 1px solid $gray-300;
+}
+
+.link{
+    color: $gray-900;
+}

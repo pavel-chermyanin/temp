@@ -1,0 +1,47 @@
+@import '@/styles/mixins';
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    background-color: #fff;
+    padding: 48px;
+    border-radius: 12px;
+
+    @media( max-width: 500px) {
+        padding: 48px 15px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+
+
+        .file_group {
+            label {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 24px;
+
+                > div {
+                    margin: 0 !important;
+                }
+            }
+        }
+
+        .span_textarea {
+            height: 165px;
+            resize: none;
+        }
+
+    }
+
+    // .filepond--drop-label.filepond--drop-label label {
+    //     display: flex;
+    // }
+
+}

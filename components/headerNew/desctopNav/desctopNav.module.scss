@@ -1,0 +1,101 @@
+@import '@/styles/mixins';
+
+
+.nav {
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+
+    @media(min-width:901px) {
+        display: block;
+    }
+}
+
+.nav_list {
+    margin-left: 20px !important;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    gap: 40px;
+
+    @media(max-width:1024px) {
+        gap: 24px;
+    }
+
+    @media(max-width:850px) {
+        gap: 18px;
+    }
+
+    ul,
+    li {
+        padding: 0;
+    }
+}
+
+.drop_btn {
+    padding: 0 !important;
+    border: none !important;
+    background: none !important;
+
+    .select {
+        color: $primary;
+
+    }
+
+    &:hover {
+        .drop_item {
+            color: $primary;
+        }
+    }
+}
+
+.drop_item {
+    color: $gray-900;
+    font-weight: 500;
+    font-size: 14px;
+
+    @media(max-width:1024px) {
+        font-size: 12px;
+    }
+}
+
+
+.drop_item__providers {
+    border-top: 1px solid $gray-300;
+    position: absolute;
+    border-radius: 0 !important;
+    background-color: #fff;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 40px 0 !important;
+    z-index: 1000;
+
+    opacity: 0;
+    animation: fadeIn ease-in;
+    animation-fill-mode: forwards;
+    animation-duration: .2s;
+    animation-delay: 0.1s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.drop_title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+
+    i {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,54 @@
+@import '@/styles/mixins';
+
+.blockSort {
+    padding: 20px 16px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    color: $gray-900;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $gray-200;
+    margin: 0;
+}
+
+.info {
+    padding: 24px 0;
+    margin-bottom: 24px;
+    border-bottom: 1px solid $gray-200;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    
+}
+
+.info_item {
+    padding: 11px 14px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    &:hover{
+        background-color: $gray-100;
+    }
+    &.selected{
+        background-color: $gray-200;
+    };
+}
+
+
+
+.info_itemTitle {
+    color: $gray-900;
+    font-weight: 600;
+}
+
+.info_itemValue {
+    font-weight: 500;
+    font-size: 14px;
+    font-weight: 500;
+    color: $gray-600;
+}

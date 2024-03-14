@@ -1,0 +1,162 @@
+@import '@/styles/mixins';
+
+.city_wrapper {
+    display: none;
+    margin-right: auto;
+    // position: relative;
+    // width: 100%;
+
+
+    @media(min-width:901px) {
+        display: block;
+    }
+}
+
+.drop_btn {
+    padding: 0 !important;
+    border: none !important;
+    background: none !important;
+    margin-right: auto;
+
+    .select {
+        color: $primary;
+
+
+    }
+
+
+
+    &:hover {
+        .drop_item {
+            color: $primary;
+        }
+
+        svg {
+            path {
+                fill: $primary;
+            }
+        }
+    }
+}
+
+.selectBtn {
+    svg {
+        path {
+            fill: $primary;
+        }
+    }
+}
+
+.drop_item {
+    font-weight: 500;
+    font-size: 14px;
+    color: $gray-900;
+    display: inline-block;
+    margin-left: 8px;
+
+    @media(max-width:1024px) {
+        font-size: 12px;
+    }
+}
+
+
+.drop_item__providers {
+    position: absolute;
+    background-color: #fff;
+    top: 70px;
+    padding: 40px !important;
+    z-index: 1000;
+    max-width: 636px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 2px 2px 4px 2px rgba(31, 27, 45, 0.08);
+    opacity: 0;
+    animation: fadeIn ease-in;
+    animation-fill-mode: forwards;
+    animation-duration: .2s;
+    animation-delay: 0.1s;
+
+
+
+    .search_wrapper {
+        max-width: 480px;
+        position: relative;
+
+        .suggestedCities {
+            position: absolute;
+            background-color: #fff;
+            top: 50px;
+            border-radius: 12px;
+            width: 100%;
+            padding: 16px 24px;
+            border: 1px solid rgba(0, 0, 0, .1);
+
+            p {
+                font-size: 16px;
+                color: $gray-900;
+                font-weight: 500;
+                margin: 0;
+                padding: 5px 0;
+                cursor: pointer;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .popular_cities {
+        margin-top: 30px;
+        color: $primary;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .cities {
+        margin-top: 10px;
+        max-width: 580px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        column-gap: 30px;
+
+
+
+        p {
+            font-size: 16px;
+            color: $gray-900;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 10px 0;
+            transition: all .2s;
+            margin: 0;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.drop_title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    i {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,38 @@
+@import '@/styles/mixins';
+
+.auth_controls{
+    padding: 0 !important;
+    border-radius: 50% !important;
+
+    a{
+        background-color: $accent !important;
+        font-size: 12px;
+        color: #fff;
+        padding: 13px 24px;
+        border-radius: 6px;
+        margin-left: 10px;
+        // transition: box-shadow 0.3s ease;
+
+        &:hover{
+            color: #fff;
+            box-shadow: 0 0 10px rgba($accent, 0.5);
+        }
+    }
+}
+
+.ava_btn {
+    padding: 0 !important;
+    overflow: hidden;
+    border-radius: 50% !important;
+    border: none !important;
+    background: none !important;
+    margin-left: 20px;
+
+    img{
+        max-width: none;
+    }
+}
+
+// .login_btn{
+//     background-color: $accent !important;
+// }

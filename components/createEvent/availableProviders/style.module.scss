@@ -1,0 +1,49 @@
+@import '@/styles/mixins';
+
+.available_wrapper {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid $gray-400;
+    border-radius: 12px;
+    height: 200px;
+    max-width: 340px;
+    justify-self: end;
+    width: 100%;
+    @media(max-width: 1000px) {
+        max-width: 100%;
+    }
+
+    &.pricePage{
+        border: none;
+    }
+   
+
+    .title{
+        font-size: 24px;
+        font-weight: 600;
+        color: $gray-900;
+        margin-bottom: 16px;
+    }
+    .avatars{
+        display: flex;
+
+        p{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $gray-300;
+        }
+       
+        .ava_wrapper + .ava_wrapper {
+            margin-left: -16px;
+        }
+
+        img {
+            border-radius: 50%;
+            height: 40px;
+        }
+    }
+}

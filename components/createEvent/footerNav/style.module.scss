@@ -1,0 +1,49 @@
+@import '@/styles/mixins';
+
+.footer_nav{
+    margin-top: 16px;
+    display: flex;
+    // flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 24px 48px;
+    border-radius: 12px;
+
+    @media( max-width: 768px) {
+        flex-direction: column;
+
+        button{
+            width: 100%;
+        }
+    }
+
+    @media( max-width: 500px) {
+        padding: 48px 15px;
+    }
+
+    .btn_next{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .btn_back{
+        border: none;
+        color: $primary;
+    }
+
+    button{
+        padding: 14px 32px;
+
+        .chevron{
+            width: 20px;
+            height: 20px;
+            font-size: 14px;
+        }
+    }
+    a{
+        color: $gray-600;
+    }
+}

@@ -1,0 +1,45 @@
+@import '@/styles/mixins';
+
+// .calendar{
+//   input{
+
+//   }
+// }
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 12px;
+}
+
+.dateItem {
+  padding: 7px 16px;
+  border-radius: 40px;
+  background-color: $primary;
+  width: fit-content;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 18px;
+
+  &.clear {
+    background-color: rgba($primary, .1);
+    color: $primary;
+
+    button {
+      color: $primary;
+    }
+  }
+
+
+  button {
+    border: none;
+    background: none;
+    color: #fff;
+
+  }
+
+}

@@ -1,0 +1,17 @@
+.search_group {
+    position: relative;
+    width: 100%;
+
+
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+    }
+}
+
+.search_input {
+    padding-left: 40px !important;
+    width: 100%;
+}

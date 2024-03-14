@@ -1,0 +1,46 @@
+@import '@/styles/mixins';
+
+.sortForm {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    select {
+        font-size: 12px;
+        font-weight: 500;
+        color: $gray-600;
+    }
+}
+
+.sortForm_toggle {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 0;
+
+    label {
+        font-weight: 600;
+        color: $gray-900;
+    }
+}
+
+.buttons_group {
+    background-color: $gray-200;
+    padding: 3px;
+
+    button {
+        border: none;
+        border-radius: 6px !important;
+
+
+        .activeTab {
+            // box-shadow: 1px 2px 3px 4px !important;
+
+            background: red !important;
+        }
+
+    }
+
+    .btn-light {}
+}

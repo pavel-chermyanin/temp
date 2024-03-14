@@ -1,0 +1,20 @@
+@import '@/styles/mixins';
+
+.control_list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    .control_list_item{
+        cursor: pointer;
+
+        &:hover{
+            svg{
+                path{
+
+                    fill: $primary;
+                }
+            }
+        }
+    }
+}

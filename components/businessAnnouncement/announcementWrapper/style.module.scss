@@ -1,0 +1,10 @@
+@import '@/styles/mixins';
+
+
+
+.announcement_wrapper{
+  display: flex;
+  gap: 30px;
+  // flex-grow: 1;
+  // width: 100%;
+}

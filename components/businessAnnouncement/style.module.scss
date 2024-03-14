@@ -1,0 +1,13 @@
+@import '@/styles/mixins';
+
+.announcement_wrapper{
+
+}
+.progress_group {
+  max-width: 354px;
+  width: 100%;
+
+  .progress{
+    height: 8px;
+  }
+}

@@ -1,0 +1,79 @@
+@import '@/styles/mixins';
+.exact_price{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-self: end;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    background-color: #fff;
+    padding: 48px;
+    border-radius: 12px;
+
+    @media( max-width: 500px) {
+        padding: 48px 15px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .item_group {
+        display: flex;
+        gap: 12px;
+    }
+
+    label {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 6px;
+
+        .span_title {
+            color: $gray-900;
+            font-weight: 600;
+        }
+
+        .span_price {
+            font-size: 10px;
+            font-weight: 500;
+            background-color: $gray-200;
+            color: $gray-600;
+            padding: 4px 12px;
+            border-radius: 80px;
+        }
+
+        .span_text {
+            font-size: 12px;
+            font-weight: 500;
+            color: $gray-600;
+        }
+    }
+
+    .item_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        height: auto;
+
+    }
+
+    input {
+        width: 30px;
+        height: 30px;
+        background: $gray-200;
+        border: none;
+
+        &:checked {
+            border: 8px solid $primary;
+            background-image: none !important;
+        }
+    }
+}

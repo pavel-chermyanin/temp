@@ -1,0 +1,8 @@
+@import '@/styles/mixins';
+
+
+
+.add_btn {
+    background-color: rgba($color: $primary, $alpha: .1);
+    color: $primary !important;
+}

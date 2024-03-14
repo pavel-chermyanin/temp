@@ -1,0 +1,17 @@
+@import '@/styles/mixins';
+
+.switch_wrapper {
+    // background-color: #fff;
+
+    .tabs_wrapper{
+        padding: 30px;
+        border-radius: 12px;
+        background-color: #fff;
+
+        p {
+            font-size: 20px;
+            color: $gray-900;
+            font-weight: 600;
+        }
+    }
+}
